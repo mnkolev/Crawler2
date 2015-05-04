@@ -1,0 +1,1601 @@
+<body> 
+ <style type="text/css">
+body { margin-top: 0; margin-left: 0; margin-right: 0; padding-top: 0; padding-right: 0; padding-left: 0; }
+
+#g_nav { border-bottom:1px solid #ccc; margin-bottom: 9px; }
+
+#g_nav a,
+#g_nav a:visited { color: #00c; }
+
+.navBi { display: -moz-inline-box; display: inline-block; padding: 9px 12px; margin: 0; list-style-type: none; }
+</style> 
+ <div id="g_nav"> 
+  <table width="100%" cellpadding="0" cellspacing="0"> 
+   <tbody>
+    <tr> 
+     <td nowrap> <style type="text/css">
+#p_nav a.selected { font-weight: bold; text-decoration:none; color: #000 !important; }
+</style> 
+      <div id="p_nav">
+       <span class="navBi"><a href="/" title="Jobs" id="jobsLink" class="selected">Find Jobs</a></span>
+       <span class="navBi"><a href="/resumes?isid=find-resumes&amp;ikw=SERPtop&amp;co=US&amp;hl=en" id="rezLink">Find Resumes</a></span>
+       <span class="navBi"><a href="https://ads.indeed.com/?hl=en&amp;cc=US" id="empLink" onclick="if ( this.href.match('&amp;isid=employerlink-US-control&amp;ikw=SERPtop') == null ) { this.href += '&amp;isid=employerlink-US-control&amp;ikw=SERPtop' };">Employers / Post Job</a></span>
+      </div> </td> 
+     <td align="right" nowrap> <style type="text/css">
+
+
+#navpromo a,
+#navpromo a:visited {
+color: #f60;
+}
+
+
+#u_nav .login_unconfirmed,
+#u_nav .login_unconfirmed a,
+#u_nav .login_unconfirmed a:visited {
+color: #c00
+}
+
+#u_nav .resume_pending,
+#u_nav .resume_pending a,
+#u_nav .resume_pending a:visited {
+color: #c00
+}
+
+#userOptionsLabel {
+position: relative;
+z-index: 5;
+}
+
+#userOptionsLabel b {
+cursor: pointer;
+text-decoration: underline;
+position: relative;
+z-index: 5;
+}
+
+#userOptionsLabel:active {
+outline: none;
+}
+
+#userOptionsLabel.active {
+padding: 9px 11px;
+margin-bottom: -1px;
+_margin-bottom: 0px;
+border: 1px solid #ccc;
+border-top: 0;
+}
+
+#userOptionsLabel.active b {
+color: #666;
+}
+
+#userOptionsLabel.active .arrowStub {
+border-width: 0 3px 3px;
+_border-width: 0px 3px 4px;
+border-color: transparent;
+border-bottom-color: #666;
+top: -2px;
+border-style: dashed dashed solid;
+}
+
+#userOptionsLabel.active .halfPxlFix {
+background: #fff;
+bottom: -3px;
+height: 6px;
+left: 0;
+position: absolute;
+right: 0;
+border: 1px solid #fff;
+}
+
+.arrowStub {
+position: relative;
+border-style: solid dashed dashed;
+border-color: transparent;
+border-top-color: #666;
+display: -moz-inline-box;
+display: inline-block;
+font-size: 0;
+height: 0;
+line-height: 0;
+width: 0;
+left: 4px;
+border-width: 3px 3px 0px;
+padding-top: 1px;
+top: -1px;
+}
+
+#userOptions {
+z-index: 2;
+visibility: hidden;
+position: absolute;
+right: 0;
+x_right: -1px;
+top: 100%;
+padding: 9px 15px;
+border: 1px solid #ccc;
+background: #fff;
+min-width: 150px;
+_width: 150px;
+text-align: left;
+}
+
+#userOptions.open {
+visibility: visible;
+}
+
+.userOptionItem {
+margin: 6px 0;
+}
+
+.userOptionItem a {
+white-space: nowrap;
+}
+
+.userOptionGroup {
+border-top: 1px solid #e8e8e8;
+margin-top: 12px;
+}
+
+.userNameRepeat {
+color: #a8a8a8;
+padding-right: 48px;
+font-weight: bold;
+}
+
+
+</style> 
+      <div id="u_nav"> 
+       <script type="text/javascript">
+function isUserOptionsOpen() {
+return document.getElementById('userOptions').className == 'open';
+}
+
+function hideUserOptions(label, options) {
+options.className = '';
+label.className = 'navBi';
+}
+
+function toggleUserOptions(e) {
+var options = document.getElementById('userOptions');
+var label = document.getElementById('userOptionsLabel');
+if (isUserOptionsOpen()) {
+hideUserOptions(label, options);
+if (!e.keyCode) {
+label.blur();
+}
+} else {
+options.className = 'open';
+label.className = 'navBi active';
+document.onclick = function() {
+hideUserOptions(label, options);
+document.onclick = function() {
+};
+};
+if (e.keyCode && e.keyCode == 13) {
+var fL = gbid('userOptions').getElementsByTagName('a')[0];
+if (fL) {
+fL.focus();
+}
+}
+else {
+label.blur();
+}
+}
+stopPropagation(e);
+
+}
+
+function stopPropagation(e) {
+var e = e || window.event;
+e.stopPropagation ? e.stopPropagation() : e.cancelBubble = true;
+}
+</script> 
+       <div id="user_actions"> 
+        <span class="navBi"><span id="navpromo"><a href="/promo/resume" onclick="window.location=this.href + '?from=nav&amp;subfrom=rezprmstd&amp;trk.origin=jobsearch&amp;trk.variant=rezprmstd&amp;trk.tk=195bop55m0nii0j7'; return false;">Post your resume</a></span></span> 
+        <span class="navBi"><a href="http://www.indeed.com/account/login?dest=%2Fjobs%3Fq%3Ddeveloper%3D%26lrichmond%2C%2BVA" rel="nofollow" id="userOptionsLabel">Sign in</a></span> 
+       </div> 
+      </div> </td> 
+    </tr> 
+   </tbody>
+  </table> 
+ </div> 
+ <style type="text/css">
+#branding img { border: 0; }
+#jobsearch { margin: 0 }
+.inwrap { border-right: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;display:inline-block; }
+.inwrap input { margin:0; height: 22px; font-family:Arial,sans-serif;border:1px solid #ccc;border-bottom-color:#aaa;border-right-color:#aaa; -webkit-border-radius: 0; -webkit-appearance: none; }
+.inwrap .input_text { font-size:18px;padding:3px 6px;_margin: -1px 0; }
+.inwrap .input_submit {color:#614041;font-size:15px;height:30px;background: #e8e8e8; padding:3px 9px;cursor:pointer;_padding:3px;}
+.inwrap .input_submit:active { background: #ccc; }
+.lnav  {width:100%;line-height:1;;font-size:10pt;}
+.jsf .label {font-size:12px; line-height:1.2;padding-top:0;color:#aaa;font-weight:normal;white-space:nowrap;padding-right:1.5em}
+.jsf .label label {font-weight:normal}
+.jsf .sl { font-size: 11px; color: #77c; white-space: nowrap; }
+.npb { padding-bottom: 0; color: #f60; text-transform: lowercase;font-weight:bold; }
+.npl { padding-left: 0 }
+
+
+
+
+.acd { border: 1px solid #333; background: #fff; position:absolute; width:100%; z-index: 1; }
+.aci { font-size: 18px; padding:1px 6px; cursor:pointer; }
+.acis { background:#36c; color:#fff; }
+
+
+#tjobalerts .ws_label,
+#bjobalerts .ws_label,
+#tjobalerts .member,
+#bjobalerts .member{ z-index: 1; }
+#acr td { padding-top:0; padding-bottom:0; }
+#acr td .h { display:none; }
+
+#what { width: 280px; }
+#where { width: 260px; }
+.inwrapBorder{border:1px solid #1C4ED9;border-top-color:#2F62F1;border-bottom-color:#133FBB;display:inline-block;width:auto;}
+.inwrapBorderTop{border-top:1px solid #69F;display:inline-block;background-color:#3163F2;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3163F2',endColorstr='#2B57D5');background:-webkit-gradient(linear,left top,left bottom,from(#3163F2),to(#2B57D5));background:-moz-linear-gradient(top,#3163F2,#2B57D5);background:linear-gradient(top,#3163F2,#2B57D5);}
+.inwrapBorder .input_submit{background: transparent;border:0;color:#fff;font-family:Arial;font-size:15px;margin:0;padding:4px 9px;cursor:pointer;_padding:3px;}
+.inwrapBorder a.input_submit{text-decoration: none; display: block;}
+
+.inwrapBorder:hover{border-color:#235af6;border-top-color:#4072ff;border-bottom-color:#1e4fd9;}
+.inwrapBorderTop:hover{border-top-color:#7ba7ff;background-color:#4273ff;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4273ff',endColorstr='#3364f1');background:-webkit-gradient(linear,left top,left bottom,from(#4273ff),to(#3364f1));background:-moz-linear-gradient(top,#4273ff,#3364f1);background:linear-gradient(top,#4273ff,#3364f1);}
+
+.inwrapBorder:active{border-color:#536db7;border-top-color:#4b69c1;border-bottom-color:#3753a6;}
+.inwrapBorder:active .inwrapBorderTop{border-top-color:#6c82c1;background-color:#4b69c1;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b69c1',endColorstr='#3753a6');background:-webkit-gradient(linear,left top,left bottom,from(#4b69c1),to(#3753a6));background:-moz-linear-gradient(top,#4b69c1,#3753a6);background:linear-gradient(top,#4b69c1,#3753a6);}
+
+.roundedCorner {
+    display: inline-block;
+    zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display: inline;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 15px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.roundedCorner:hover {
+    text-decoration: none;
+}
+.roundedCorner:active {
+    position: relative;
+    top: 1px;
+}
+
+.bigrounded {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+.medium {
+    font-size: 12px;
+    padding: .4em 1.5em .42em;
+}
+.small {
+    font-size: 11px;
+    padding: .2em 1em .275em;
+}
+
+.indeedblue {
+    color: #d9eef7;
+    border: solid 1px #1C4ED9;
+    background: #3163F2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2F62F1), to(#133FBB));
+    background: -moz-linear-gradient(top,  #2F62F1,  #133FBB);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2F62F1', endColorstr='#133FBB');
+}
+.indeedblue:hover {
+    background: #235af6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4072ff), to(#1e4fd9));
+    background: -moz-linear-gradient(top,  #4072ff,  #1e4fd9);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4072ff', endColorstr='#1e4fd9');
+}
+.indeedblue:active {
+    color: #d9eef7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4b69c1), to(#3753a6));
+    background: -moz-linear-gradient(top,  #4b69c1,  #3753a6);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b69c1', endColorstr='#3753a6');
+}
+</style> 
+ <table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+   <tr>
+    <td width="1125"> 
+     <table class="lnav" cellpadding="0" cellspacing="0"> 
+      <tbody>
+       <tr> 
+        <td id="branding-td" style="padding: 5px 0 5px 5px;width:175px;vertical-align:top;"><a id="branding" href="/" onmousedown="ptk('logo');"><img src="/images/indeed.png" alt="one search. all jobs. Indeed" width="175" height="72" style="margin-bottom:6px"></a></td> 
+        <td valign="top" style="padding:3px 0 0 5px;"> 
+         <form class="jsf" name="js" id="jobsearch" action="/jobs" method="get" onsubmit="formptk('topsearch','where_ac','',['where_ac','what_ac'], ptk);
+formptk('topsearch','what_ac','w',['where_ac','what_ac'], ptk);"> 
+          <table cellpadding="3" cellspacing="0" align="left"> 
+           <tbody>
+            <tr> 
+             <td class="npb"><label for="what">What:</label></td> 
+             <td class="npb" colspan="3"><label for="where">Where:</label></td> 
+            </tr> 
+            <tr> 
+             <td class="npl epr"><span class="inwrap"><input name="q" class="input_text" size="31" maxlength="512" value="developer=" id="what"></span>
+              <div style="width:250px">
+               <!-- -->
+              </div></td> 
+             <td class="npl epr"><span class="inwrap"><input name="l" class="input_text" size="27" maxlength="45" value="" id="where"></span>
+              <div style="width:200px">
+               <!-- -->
+              </div></td> 
+             <td class="npl" style="width:1px"><span class="inwrapBorder" style="width:auto;padding-right:0;"><span class="inwrapBorderTop"><input id="fj" class="input_submit" type="submit" value="Find Jobs"></span></span></td> 
+             <td class="npl" style="width:240px;">
+              <div style="margin-left:12px">
+               <a class="sl" href="/advanced_search?q=developer%3D">Advanced Job Search</a>
+              </div></td> 
+            </tr> 
+            <tr id="acr"> 
+             <td><span class="h">&nbsp;</span></td> 
+             <td colspan="2" class="npl">
+              <div style="position:relative;z-index:2">
+               <div id="acdiv" class="acd" style="display:none;"></div>
+              </div></td> 
+             <td><span class="h">&nbsp;</span></td> 
+            </tr> 
+            <tr id="acr"> 
+             <td colspan="3" class="npl">
+              <div style="position:relative;z-index:2">
+               <div id="what_acdiv" class="acd" style="display:none;"></div>
+              </div></td> 
+             <td><span class="h">&nbsp;</span></td> 
+            </tr> 
+            <tr valign="baseline"> 
+             <td class="label"> <label for="what">job title, keywords or company</label> </td> 
+             <td colspan="3" class="label"> <label for="where">city, state, or zip</label> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </form> </td> 
+       </tr> 
+      </tbody>
+     </table> </td>
+   </tr>
+  </tbody>
+ </table> 
+ <script type="text/javascript">
+
+    
+    
+        
+        initAutocomplete('where_ac', gbid('where'), gbid('acdiv'), '/rpc/suggest?from=serp&tk=195bop55m0nii0j7', function() { formptk('topsearch','where_ac', '', ['where_ac','what_ac'], ptk); });
+        
+        
+        initAutocomplete('what_ac', gbid('what'), gbid('what_acdiv'), '/rpc/suggest?what=true&tk=195bop55m0nii0j7', function () {formptk('topsearch', 'what_ac', 'w', ['where_ac','what_ac'], ptk);});
+        
+    
+
+</script> 
+ <script type="text/javascript">
+function rclk(el,jobdata,oc,sal) { var ocstr = oc ? '&onclick=1' : ''; document.cookie='RCLK="jk='+jobdata.jk+'&tk=195bop55m0nii0j7&rd='+jobdata.rd+'&qd=7tdTJLF8oc4dPpT7T_zGvDPI8zwjCI5-8SIdZMw1aKU0_CoCDcCg44lbSatZmMyZnOQh-3AhFB3iJDqQu2af3jvuXk1EJkM1R4N7OYpW6W1wK-pcf1J8tH6Ph5SPWpSJ&ts=1414513071286&sal='+sal+ocstr+'"; path=/'; return true;}
+function zrprclk(el,jobdata,oc) { var ocstr = oc ? '&onclick=1' : ''; document.cookie='RCLK="jk='+jobdata.jk+'&tk=195bop55m0nii0j7&from=reconzrp&rd='+jobdata.rd+'&qd=7tdTJLF8oc4dPpT7T_zGvDPI8zwjCI5-8SIdZMw1aKU0_CoCDcCg44lbSatZmMyZnOQh-3AhFB3iJDqQu2af3jvuXk1EJkM1R4N7OYpW6W1wK-pcf1J8tH6Ph5SPWpSJ&ts=1414513071286'+ocstr+'"; path=/'; return true;}
+function prjbottomclk(el,jobdata,oc) { var ocstr = oc ? '&onclick=1' : ''; document.cookie='RCLK="jk='+jobdata.jk+'&tk=195bop55m0nii0j7&from=reconserp&rd='+jobdata.rd+'&qd=7tdTJLF8oc4dPpT7T_zGvDPI8zwjCI5-8SIdZMw1aKU0_CoCDcCg44lbSatZmMyZnOQh-3AhFB3iJDqQu2af3jvuXk1EJkM1R4N7OYpW6W1wK-pcf1J8tH6Ph5SPWpSJ&ts=1414513071286'+ocstr+'"; path=/'; return true;}
+
+
+
+
+
+
+
+
+var jobmap = {};
+
+
+
+jobmap[0]= {jk:'e4ab2f1ddfc9849f',efccid: '',srcid:'6cb3ff5e35e4afc6',cmpid:'ed77a7fefd37f147',num:'0',srcname:'Bank Street College of Education',cmp:'Bank Street College of Education',cmpesc:'Bank Street College of Education',cmplnk:'/q-Bank-Street-College-of-Education-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Coach Program Director',locid:'45f6c4ded55c00bf',rd:'2gWirbGJed188tKDj_54szVW7hpL10f-2_O7Bv4Homs'};
+
+
+
+
+jobmap[1]= {jk:'d4cfecd7cf6b4f91',efccid: '',srcid:'6acc5d6390c9166f',cmpid:'b838251710713c3c',num:'1',srcname:'Indeed',cmp:'Gorilla Logic',cmpesc:'Gorilla Logic',cmplnk:'/q-Gorilla-Logic-jobs.html',loc:'New York, NY',country:'US',zip:'',city:'New York',title:'Experienced Python Developer-New York, NY',locid:'45f6c4ded55c00bf',rd:'J9OJGAF8LKQtgXuaC8rGCy0o3ZYbrhLo9NJZ0smIueg'};
+
+
+
+
+jobmap[2]= {jk:'93bc24e8f2e5ce54',efccid: '',srcid:'8f338dcf043eac64',cmpid:'a02b1537034ab1c0',num:'2',srcname:'Indeed',cmp:'LinkVisum Consulting Group',cmpesc:'LinkVisum Consulting Group',cmplnk:'/q-LinkVisum-Consulting-Group-jobs.html',loc:'McLean, VA 22102',country:'US',zip:'22102',city:'McLean',title:'E-learning Designer\/Developer - Part Time',locid:'ba98ab0eaa5f2d74',rd:'HkPYB6yl7nKPZCWfsthJOS0o3ZYbrhLo9NJZ0smIueg'};
+
+
+
+
+jobmap[3]= {jk:'1e7cdb9c28b5be23',efccid: '',srcid:'d50eeefe3a09f68f',cmpid:'43a52c69985bd9a7',num:'3',srcname:'Virginia Jobs',cmp:'VA Tech',cmpesc:'VA Tech',cmplnk:'/q-VA-Tech-jobs.html',loc:'Montgomery, VA',country:'US',zip:'',city:'Montgomery',title:'Geospatial Web Developer',locid:'33d68843a51e9b1b',rd:'acsIJ2s7W49dXfOePzjM2ihiydDAq2W0HI_GqxW-_Gw'};
+
+
+
+
+jobmap[4]= {jk:'2b76717af077b528',efccid: '',srcid:'8338fe63da080005',cmpid:'1639254ea84748b5',num:'4',srcname:'Facebook',cmp:'Facebook',cmpesc:'Facebook',cmplnk:'/q-Facebook-jobs.html',loc:'Menlo Park, CA',country:'US',zip:'',city:'Menlo Park',title:'Technical User Support - Region Specialist (Spain)',locid:'bf91f7ff3f677373',rd:'8qTWjGbsktXaJ0METwT0EChiydDAq2W0HI_GqxW-_Gw'};
+
+
+
+
+jobmap[5]= {jk:'6f1cdbd1c9428d8a',efccid: '',srcid:'22acb543fde97733',cmpid:'5e9c010894fbe499',num:'5',srcname:'Pacific Northwest National Laboratory',cmp:'Pacific Northwest National Laboratory',cmpesc:'Pacific Northwest National Laboratory',cmplnk:'/q-Pacific-Northwest-National-Laboratory-jobs.html',loc:'Richland, WA',country:'US',zip:'',city:'Richland',title:'Instrument Design Developer',locid:'c7f2bffa17c989c9',rd:'RfP4bLpy-TvmnjZl1QciaihiydDAq2W0HI_GqxW-_Gw'};
+
+
+
+
+jobmap[6]= {jk:'2aacd340beb8a9a1',efccid: '',srcid:'6ad6db358bcdbf31',cmpid:'fcee1aa61b8fe8c7',num:'6',srcname:'Reaction Search International',cmp:'Reaction Search International',cmpesc:'Reaction Search International',cmplnk:'/q-Reaction-Search-International-jobs.html',loc:'Los Angeles, CA',country:'US',zip:'',city:'Los Angeles',title:'Assistant\/Receptionist',locid:'d05a4fe50c5af0a8',rd:'yQ9H9NivLuE8vccqeLgw67DzrQSQ4_GdmVQ0_5_fLdw'};
+
+
+
+
+jobmap[7]= {jk:'f9aea527e42b58ab',efccid: '',srcid:'f42cec1866d74ec3',cmpid:'57c78eb17283370b',num:'7',srcname:'Indeed',cmp:'SNAP, Inc.',cmpesc:'SNAP, Inc.',cmplnk:'/q-SNAP-jobs.html',loc:'Lawton, OK',country:'US',zip:'',city:'Lawton',title:'Senior Training Developer\/ Military Analyst',locid:'87e853b76e667459',rd:'Uox9sNx5T45AskOhT-FzsS0o3ZYbrhLo9NJZ0smIueg'};
+
+
+
+
+jobmap[8]= {jk:'fc7d80f1c9ed70b6',efccid: '',srcid:'4200aadc2d03fd2d',cmpid:'82caae7ca96b385c',num:'8',srcname:'JRD Systems',cmp:'JRD Systems',cmpesc:'JRD Systems',cmplnk:'/q-JRD-Systems-jobs.html',loc:'Farmington Hills, MI',country:'US',zip:'',city:'Farmington Hills',title:'QA Analyst',locid:'72b6c36250909407',rd:'haDrWRybTrgy-w7sNGeZnShiydDAq2W0HI_GqxW-_Gw'};
+
+
+
+
+jobmap[9]= {jk:'36e04b31403fc004',efccid: '',srcid:'2a6034c31de038e2',cmpid:'9784ae78e9834539',num:'9',srcname:'Intuit',cmp:'Intuit',cmpesc:'Intuit',cmplnk:'/q-Intuit-jobs.html',loc:'Mountain View, CA 94039',country:'US',zip:'94039',city:'Mountain View',title:'Program Manager - NonTechnical',locid:'b0a70c53f51e95a6',rd:'wDzC2aV--phen2yDHZvB_yhiydDAq2W0HI_GqxW-_Gw'};
+
+
+
+
+
+
+
+
+
+
+// -->
+</script> 
+ <table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+   <tr>
+    <td width="1125"> <script type="text/javascript">
+window['ree'] = "pdsssps";
+window['jas'] = "u6ViqwL";
+</script> 
+     <table cellspacing="0" cellpadding="0" width="100%" border="0" id="pageContent"> 
+      <tbody>
+       <tr valign="top"> 
+        <td id="refineresultscol"> <script type="text/javascript">setOpenSectionsCookie( ':rb_Salary Estimate:recentsearches:refineresults' );</script> 
+         <div id="refineresults"> 
+          <h1><font size="+1">developer= jobs</font></h1> 
+          <div id="recPromoDisplay" style="display:none;"></div> 
+          <script type="text/javascript">
+        
+        function getRecJobLabel(ptk, res) {
+            
+            var newRecJobCount = res.newRecJobCount;
+            var params = [];
+            if (newRecJobCount > 0 && newRecJobCount != res.num) {
+                params.push("fromage=last");
+            }
+            var query = params.length > 0 ? "?" + params.join("&") : "";
+            var label = "<a href='/recommendedjobs" + query + "' onmousedown='ptk(\""+ptk+"\")' style='color:#00c;'>";
+            var recDecoration = newRecJobCount > 0 ?
+                " - <span class='nji recDecoration'>" + res.indicator + "</span>" :
+                "";
+            label += "Recommended Jobs</a>" + recDecoration;
+            return label;
+        }
+
+        function toggleRezPromo(hasRecs) {
+            var rezPromoDiv = document.getElementById(hasRecs ? "resPromoDisplayRecs" : "resPromoDisplay");
+            if (rezPromoDiv) {
+                rezPromoDiv.style.display = '';
+                var trkp = rezPromoDiv.getAttribute('data-trk');
+                if (trkp) {
+                    rpc('/rpc/log/promo?target=resume&' + trkp);
+                }
+            }
+        }
+
+        function showRecLink(res){
+            
+            
+            
+                var recDiv = document.getElementById("recPromoDisplay");
+                recDiv.innerHTML =   getRecJobLabel("recjobs", res);
+                recDiv.style.display = '';
+                rpc('/rpc/log?a=showrec&tk=195bop55m0nii0j7');
+            
+        }
+
+        function pjrc_json(res) {
+            if (res.num > 0) {
+                toggleRezPromo(true);
+                showRecLink(res);
+                var hpWelcomeMessage = document.getElementById("hp_welcome_message");
+                if (hpWelcomeMessage != null) {
+                    hpWelcomeMessage.style.display = "none";
+                }
+            } else {
+                toggleRezPromo(false);
+            }
+        }
+
+        loadJSAsync('/rpc/preccount?ctk=195bop5320nii0un&recjobcountry=US&hl=en&cb=pjrc_json&fmt=json');
+    </script> 
+          <div style="margin-left: 6px; margin-bottom: 1em;">
+           Sort&nbsp;by: 
+           <nobr>
+            <b>relevance</b> - 
+            <a href="/jobs?q=developer%3D&amp;sort=date" rel="nofollow">date</a>
+           </nobr>
+          </div> 
+          <script type="text/javascript">
+function handleRefine(isEvaluated, type, cookieValue) {
+if (!isEvaluated) {
+getRefineByOptions(type);
+}
+toggleRefineBy(cookieValue);
+return false;
+}
+</script> 
+          <div id="rb_Salary Estimate" class="rbSection rbOpen"> 
+           <div class="rbHeader"> 
+            <span tabindex="0" class="ws_label" onclick="handleRefine(true, 'SALARY', 'rb_Salary Estimate')" onkeyup="if (event.keyCode == 13) {handleRefine(true, 'SALARY', 'rb_Salary Estimate')}"> <span class="ico"></span> Salary Estimate </span> 
+           </div> 
+           <div id="SALARY_rbo" class="rbsrbo"> 
+            <ul class="rbList"> 
+             <li onmousedown="rbptk('rb', 'salest', '1');"> <a rel="nofollow" href="/jobs?q=developer%3D+$70,000" title="$70,000+ (50920)">$70,000+</a> (50920) </li> 
+             <li onmousedown="rbptk('rb', 'salest', '2');"> <a rel="nofollow" href="/jobs?q=developer%3D+$90,000" title="$90,000+ (36565)">$90,000+</a> (36565) </li> 
+             <li onmousedown="rbptk('rb', 'salest', '3');"> <a rel="nofollow" href="/jobs?q=developer%3D+$110,000" title="$110,000+ (11425)">$110,000+</a> (11425) </li> 
+             <li onmousedown="rbptk('rb', 'salest', '4');"> <a rel="nofollow" href="/jobs?q=developer%3D+$130,000" title="$130,000+ (3130)">$130,000+</a> (3130) </li> 
+             <li onmousedown="rbptk('rb', 'salest', '5');"> <a rel="nofollow" href="/jobs?q=developer%3D+$150,000" title="$150,000+ (1243)">$150,000+</a> (1243) </li> 
+            </ul> 
+           </div> 
+          </div> 
+          <div id="rb_Title" class="rbSection "> 
+           <div class="rbHeader"> 
+            <span tabindex="0" class="ws_label" onclick="handleRefine(false, 'TITLE', 'rb_Title')" onkeyup="if (event.keyCode == 13) {handleRefine(false, 'TITLE', 'rb_Title')}"> <span class="ico"></span> Title </span> 
+           </div> 
+           <div id="TITLE_rbo" class="rbsrbo"> 
+           </div> 
+          </div> 
+          <div id="rb_Company" class="rbSection "> 
+           <div class="rbHeader"> 
+            <span tabindex="0" class="ws_label" onclick="handleRefine(false, 'COMPANY', 'rb_Company')" onkeyup="if (event.keyCode == 13) {handleRefine(false, 'COMPANY', 'rb_Company')}"> <span class="ico"></span> Company </span> 
+           </div> 
+           <div id="COMPANY_rbo" class="rbsrbo"> 
+           </div> 
+          </div> 
+          <div id="rb_Location" class="rbSection "> 
+           <div class="rbHeader"> 
+            <span tabindex="0" class="ws_label" onclick="handleRefine(false, 'LOCATION', 'rb_Location')" onkeyup="if (event.keyCode == 13) {handleRefine(false, 'LOCATION', 'rb_Location')}"> <span class="ico"></span> Location </span> 
+           </div> 
+           <div id="LOCATION_rbo" class="rbsrbo"> 
+           </div> 
+          </div> 
+          <div id="rb_Job Type" class="rbSection "> 
+           <div class="rbHeader"> 
+            <span tabindex="0" class="ws_label" onclick="handleRefine(false, 'JOB_TYPE', 'rb_Job Type')" onkeyup="if (event.keyCode == 13) {handleRefine(false, 'JOB_TYPE', 'rb_Job Type')}"> <span class="ico"></span> Job Type </span> 
+           </div> 
+           <div id="JOB_TYPE_rbo" class="rbsrbo"> 
+           </div> 
+          </div> 
+          <div id="rb_Employer/Recruiter" class="rbSection "> 
+           <div class="rbHeader"> 
+            <span tabindex="0" class="ws_label" onclick="handleRefine(false, 'SOURCE_TYPE', 'rb_Employer/Recruiter')" onkeyup="if (event.keyCode == 13) {handleRefine(false, 'SOURCE_TYPE', 'rb_Employer/Recruiter')}"> <span class="ico"></span> Employer/Recruiter </span> 
+           </div> 
+           <div id="SOURCE_TYPE_rbo" class="rbsrbo"> 
+           </div> 
+          </div> 
+         </div> </td> 
+        <td id="resultsCol"> 
+         <div class="messageContainer"> 
+          <style type="text/css">
+.csearch_query {
+display:inline;
+font-style: italic;
+}
+</style> 
+          <script type="text/javascript">
+function setJaPromoCookie() {
+var expires = new Date();
+expires.setTime(expires.getTime() + (5 * 365 * 24 * 60 * 60 * 1000));
+setCookie("showJaPromo", "1", expires);
+}
+</script> 
+          <p class="message">Tip: Enter your zip code in the "where" box to show results in your area.</p> 
+         </div> <style type="text/css">
+#increased_radius_result {
+font-size: 16px;
+font-style: italic;
+}
+#original_radius_result{
+font-size: 13px;
+font-style: italic;
+color: #666666;
+}
+</style> 
+         <div style="padding-top:9px;"> 
+          <div id="searchCount">
+           Jobs 1 to 10 of 128,086
+          </div> 
+          <div id="resumePromo">
+           <a href="/promo/resume" onmousedown="this.href = appendParamsOnce( this.href, '?from=serptop&amp;subfrom=resprmrtop&amp;trk.origin=jobsearch&amp;trk.variant=resprmrtop&amp;trk.tk=195bop55m0nii0j7')"><span class="ico"></span></a> 
+           <a href="/promo/resume" onmousedown="this.href = appendParamsOnce( this.href, '?from=serptop&amp;subfrom=resprmrtop&amp;trk.origin=jobsearch&amp;trk.variant=resprmrtop&amp;trk.tk=195bop55m0nii0j7')"><b>Upload your resume</b></a> - Let employers find you 
+          </div> 
+         </div> <script type="text/javascript">
+window['sjl'] = "fJrhLfO";
+</script> <style type="text/css">
+.fJrhLfO { margin: 0 0 6px 0; padding: 0; _zoom:100%; border: 0; background-color: #fff; }
+.fJrhLfO .jobtitle { white-space: nowrap; float:@LINE_START@; _float: none; }
+.fJrhLfO .sdn { color: #CD29C0; }
+.uTA5riWJ .brdr { margin-top: 12px; }
+.yn5EMmBjYC .brdr { margin-bottom: 12px; }
+@media only screen and (min-height:780px) {
+.uTA5riWJ { margin-bottom: 9px; }
+.yn5EMmBjYC .brdr,
+.uTA5riWJ .brdr { margin-bottom: 9px; margin-top: 9px; }
+}
+</style> 
+         <div></div> 
+         <div class="fJrhLfO uTA5riWJ"> 
+          <div class="row " data-jk="5ff3990ad66a595d"> 
+           <a target="_blank" id="sja1" class="jobtitle" href="/pagead/clk?mo=r&amp;ad=-6NYlbfkN0Bnix10y7a7uEiC2mF5qTsZn_GO8ycTJYBC8N67_Kc7HZEX6sxqS7jckVeOirLYKJjf5mmpJkOFtrZj4Y8QmLzhxyYjnZknuzD7UKbR8K7gRbjl58gNtfapsZh_v9FRc2-ckpJhE9NMeX44MaDKgI6KKj6lbI03Lggv36BVtdIcJMrgL602QI59SwKNdmzMTZMkWTcjC38lYXBct0OSvAkG2QghzNebqQwJ-9MxSj_qRgXuuPcYB45emlC-HdVeZTdqzIkCwQwMvkraqmYc1HZodjS02UdEIJs2YHmx4MzDzb0A9OtwrEBW4bAy6tvtwufMPeVhhUjaI_2hPL0aCTMdA9MdTWqCEzi8jbuE9yrC9ZBgfoi01jJoZO997enwiS0H8SKHWstZWnmGLwDjYYAPl5b4s5bH_WzU7nJE2osLLilW17Y29C-IIdUcW8mSAx3fjj90W0NXJxs1A7cnZW8_5UrFxWnA9m-KhZhkaSAtdHhPOkYGPVv9c3T4V2gipQV_Ua9EnGRC6dNjcP2nsebz-9XHLmKyIxI=&amp;p=1&amp;sk=89ae8fe7cc43f8d5" title="Project Task Manager" rel="nofollow" onmousedown="sjomd('sja1'); clk('sja1');" onclick="sjoc('sja1',0); convCtr('SJ', pingUrlsForGA)">Project Task Manager</a> 
+           <br> 
+           <div class="sjcl"> 
+            <span class="company">US Information Technologies</span> - 
+            <span class="location">Norfolk, VA</span> 
+           </div> 
+           <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+             <tr>
+              <td class="snip"> <span class="summary">PM will oversee software <b>developers</b> with experience in various 4th generation programming languages and database systems that will operate on platforms to...</span> </td>
+             </tr>
+            </tbody>
+           </table> 
+           <span class="sdn">Sponsored by <b>US Information Technologies</b></span>&nbsp;-&nbsp;
+           <span class="date">19 days ago</span> 
+          </div> 
+          <div class="row " data-jk="6ca680c143e17a5f"> 
+           <a target="_blank" id="sja2" class="jobtitle" href="/pagead/clk?mo=r&amp;ad=-6NYlbfkN0BOmV-p4KQZsVD5ZQYvWOIlazlgVWkf-Rv1zj6ziwJT-kdbK92LimA2JVL_JSTpehDIv8sqj1yntfGpm8Paz5h6zK583fJcFtmkgp7fXoyngADyRrSyoqQXkri-6oAs6i9xfAsMquHlWNsGygeDo9avyxra2BixJ-Kb7PBuLzezfU_DCAUxKEs0TOrw65fKaWYcXEWMSO8CdcSIjBzrTEiii5zijhtswEOatLr114OXW74LZmx9bWlJlzP52rAWBlbs1nnCX3mIedsdYcOJLMdMm1mW2CGDB9lEnzvVyKCGltjZhf-jZSTby2tBsOlaRKxWYw8YGafFzGAIvYQwqNZRe3AGZHM1onFzSADE3nD_b_ut-TrlNpDuX2B3K4UWmFQiYy-IqD4z-xA3zG5nX3Y7OW1wihGcY3sBKUeyas2oOTUoW0BrATCIsuyT9SbiW5fP5mqNvwBE9Zl7VfBG7LwFi0z2QI-fvXI=&amp;p=2&amp;sk=89ae8fe7cc43f8d5" title="Claire's - IT Business Analyst" rel="nofollow" onmousedown="sjomd('sja2'); clk('sja2');" onclick="sjoc('sja2',0); convCtr('SJ', pingUrlsForGA)">Claire's - IT Business Analyst</a> 
+           <br> 
+           <div class="sjcl"> 
+            <span class="company">Claire's</span> - 
+            <span class="location">Hoffman Estates, IL</span> 
+           </div> 
+           <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+             <tr>
+              <td class="snip"> <span class="summary">Work with <b>developers</b> to define, document and review the technical scope and objectives of projects. Claire's is currenlty looking to hire an IT Business Analyst...</span> </td>
+             </tr>
+            </tbody>
+           </table> 
+           <span class="sdn">Sponsored by <b>Claire's</b></span>&nbsp;-&nbsp;
+           <span class="date">14 days ago</span> 
+          </div> 
+          <div class="row sjlast" data-jk="67fe460b88c4b1e5"> 
+           <a target="_blank" id="sja3" class="jobtitle" href="/pagead/clk?mo=r&amp;ad=-6NYlbfkN0Dk5eNvCwGgFAL0ixlYZTWF7OSBwVgIZQtiFVZqs5WeYhThLXAuDJysq7Ou6ozTAOiD8P27F5JtvVwuIcbIh66G0_nxmWwd6COHDfRg70uJJbsn1NTXRlgJEcdtQTmxH97s_ryrJKh6oG3H-bQwwltTVStgKIvMbR-WuEEDkR2ex2gbBGL92R0Vba4LQpM8mi5e8qjSXN8nyYJoYIy2xDoqwvav0VcM4gXB3GLG_cwFW7SCV8mM2dXwU4g5wSS1__F1S3bXEYu1LEIGJe0WxOrlOVnwHIdPiTlmhDlTSpVslHlo7VFNgmDBw0RpSHNshSQ-I3vZ8ZGB9Kh1ac_2T4RktC5hDVJrSpwt05jAbZKV7uug4TDzbdYbdeCTd6-pEmRx6ikp_bHuSTqwB2rym7GWqV3GJBOWtLP2l_b4kXgoTTGb5_6q1DmRwMy_fh5jxpxS3nOH5fSClCV42hsUnyEvcn6tvkBubwq--883RnBd0nKZKybTPqt8nE7C6b8WKKFGygbHbjv-AhIaiaQsoeEA_6S0pPJ6VcOmBbN04dVweA==&amp;p=3&amp;sk=89ae8fe7cc43f8d5" title="Node.js Platform Developer" rel="nofollow" onmousedown="sjomd('sja3'); clk('sja3');" onclick="sjoc('sja3',0); convCtr('SJ', pingUrlsForGA)">Node.js Platform <b>Developer</b></a> 
+           <br> 
+           <div class="sjcl"> 
+            <span class="company">Ask.com</span> - 
+            <span class="location">Oakland, CA</span> 
+           </div> 
+           <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+             <tr>
+              <td class="snip"> <span class="summary">The <b>developer</b> will be involved in all aspects of site/feature development from start to finish (R&amp;D, design documentation, prototyping, implementation, unit...</span> </td>
+             </tr>
+            </tbody>
+           </table> 
+           <span class="sdn">Sponsored by <b>Ask.com</b></span>&nbsp;-&nbsp;
+           <span class="date">12 days ago</span> 
+          </div> 
+          <div class="brdr">
+           <!-- -->
+          </div> 
+         </div> 
+         <div class="row " id="p_e4ab2f1ddfc9849f" data-jk="e4ab2f1ddfc9849f" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_e4ab2f1ddfc9849f" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=e4ab2f1ddfc9849f" target="_blank" onmousedown="return rclk(this,jobmap[0],0);" onclick="return rclk(this,jobmap[0],true,0);" itemprop="title" title="Coach Program Director">Coach Program Director</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">Bank Street College of Education</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Respond to MDRC and Program <b>Developer</b> questions concerning trends and issues regarding the MIS Coach Log data as well as data collected by Bank Street on coach... </span> 
+              </div> <span class="date">6 hours ago</span> <span id="tt_set_0" class="tt_set"> - <span id="savelink2_e4ab2f1ddfc9849f"> <a id="sj_e4ab2f1ddfc9849f" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[0]); toggleResultTab(this, 'anon_save_job0', 0);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_e4ab2f1ddfc9849f"></span> 
+               <div id="editsaved2_e4ab2f1ddfc9849f" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=e4ab2f1ddfc9849f" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 0,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': 'e4ab2f1ddfc9849f',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=e4ab2f1ddfc9849f',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_0', 0);
+return false;"> email</a> - <a href="#" id="tog_0" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=0&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_0', 0);return false;">more...</a> </span> 
+              <div id="tt_display_0" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job0" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job0" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_0" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_0" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/l-New-York,-NY-jobs.html">New York jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Coach+Program+Director&amp;l1=New+York%2C+NY">Coach Program Director salaries in New York, NY</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/New-York-New-York.html">New York, New York</a> </span></li> 
+                </ul> 
+                <div id="options_0"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_d4cfecd7cf6b4f91" data-jk="d4cfecd7cf6b4f91" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_d4cfecd7cf6b4f91" class="jobtitle"> <a rel="nofollow" href="/cmp/Gorilla-Logic/jobs/Experienced-Python-Developer-d4cfecd7cf6b4f91?r=1" target="_blank" onmousedown="return rclk(this,jobmap[1],0);" onclick="return rclk(this,jobmap[1],true,0);" itemprop="title" title="Experienced Python Developer-New York, NY">Experienced Python <b>Developer</b>-New York, NY</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">Gorilla Logic</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">New York, NY</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Job Description-Python <b>Developer</b>. Gorilla Logic is working with our client, who is an industry leader in innovative web and mobile application development to... </span> 
+              </div> 
+              <div class="iaP"> 
+               <span class="iaLabel"> Easily apply</span> 
+              </div> <span class="date">19 hours ago</span> <span id="tt_set_1" class="tt_set"> - <span id="savelink2_d4cfecd7cf6b4f91"> <a id="sj_d4cfecd7cf6b4f91" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[1]); toggleResultTab(this, 'anon_save_job1', 1);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_d4cfecd7cf6b4f91"></span> 
+               <div id="editsaved2_d4cfecd7cf6b4f91" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=d4cfecd7cf6b4f91" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 1,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': 'd4cfecd7cf6b4f91',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=d4cfecd7cf6b4f91',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_1', 1);
+return false;"> email</a> - <a href="#" id="tog_1" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=1&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_1', 1);return false;">more...</a> </span> 
+              <div id="tt_display_1" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job1" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job1" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_1" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_1" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Gorilla-Logic-l-New-York,-NY-jobs.html" rel="nofollow">Gorilla Logic jobs in New York, NY</a> - <a href="/l-New-York,-NY-jobs.html">New York jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Experienced+Python+Developer&amp;l1=New+York%2C+NY">Experienced Python Developer salaries in New York, NY</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/New-York-New-York.html">New York, New York</a> </span></li> 
+                </ul> 
+                <div id="options_1"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_93bc24e8f2e5ce54" data-jk="93bc24e8f2e5ce54" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_93bc24e8f2e5ce54" class="jobtitle"> <a rel="nofollow" href="/cmp/LinkVisum-Consulting-Group/jobs/E-Learning-Designer-Developer-93bc24e8f2e5ce54?r=1" target="_blank" onmousedown="return rclk(this,jobmap[2],0);" onclick="return rclk(this,jobmap[2],true,0);" itemprop="title" title="E-learning Designer/Developer - Part Time">E-learning Designer/<b>Developer</b> - Part Time</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">LinkVisum Consulting Group</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">McLean, VA 22102</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> We are looking for a part time E-Learning <b>developer</b> to support completing several web-based training projects. Are you interested in the opportunity to work for... </span> 
+              </div> 
+              <div class="iaP"> 
+               <span class="iaLabel"> Easily apply</span> 
+              </div> <span class="date">10 days ago</span> <span id="tt_set_2" class="tt_set"> - <span id="savelink2_93bc24e8f2e5ce54"> <a id="sj_93bc24e8f2e5ce54" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[2]); toggleResultTab(this, 'anon_save_job2', 2);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_93bc24e8f2e5ce54"></span> 
+               <div id="editsaved2_93bc24e8f2e5ce54" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=93bc24e8f2e5ce54" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 2,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': '93bc24e8f2e5ce54',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=93bc24e8f2e5ce54',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_2', 2);
+return false;"> email</a> - <a href="#" id="tog_2" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=2&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_2', 2);return false;">more...</a> </span> 
+              <div id="tt_display_2" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job2" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job2" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_2" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_2" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Linkvisum-Consulting-Group-l-McLean,-VA-jobs.html" rel="nofollow">LinkVisum Consulting Group jobs in McLean, VA</a> - <a href="/l-McLean,-VA-jobs.html">McLean jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=E+Learning+Designer+Developer&amp;l1=McLean%2C+VA">E Learning Designer Developer salaries in McLean, VA</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/Mclean-Virginia.html">Mclean, Virginia</a> </span></li> 
+                </ul> 
+                <div id="options_2"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_1e7cdb9c28b5be23" data-jk="1e7cdb9c28b5be23" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_1e7cdb9c28b5be23" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=1e7cdb9c28b5be23" target="_blank" onmousedown="return rclk(this,jobmap[3],0);" onclick="return rclk(this,jobmap[3],true,0);" itemprop="title" title="Geospatial Web Developer">Geospatial Web <b>Developer</b></a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">VA Tech</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Montgomery, VA</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Geospatial Web <b>Developer</b> participates in analysis, design, development, testing and maintenance of geospatial web applications to meet CGIT and University needs... </span> 
+              </div> <span class="sdn">Virginia Jobs</span>&nbsp;-&nbsp;<span class="date">2 days ago</span> <span id="tt_set_3" class="tt_set"> - <span id="savelink2_1e7cdb9c28b5be23"> <a id="sj_1e7cdb9c28b5be23" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[3]); toggleResultTab(this, 'anon_save_job3', 3);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_1e7cdb9c28b5be23"></span> 
+               <div id="editsaved2_1e7cdb9c28b5be23" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=1e7cdb9c28b5be23" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 3,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': '1e7cdb9c28b5be23',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=1e7cdb9c28b5be23',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_3', 3);
+return false;"> email</a> - <a href="#" id="tog_3" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=3&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_3', 3);return false;">more...</a> </span> 
+              <div id="tt_display_3" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job3" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job3" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_3" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_3" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Va-Tech-l-Montgomery,-VA-jobs.html" rel="nofollow">VA Tech jobs in Montgomery, VA</a> - <a href="/l-Montgomery,-VA-jobs.html">Montgomery jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Geospatial+Web+Developer&amp;l1=Montgomery%2C+VA">Geospatial Web Developer salaries in Montgomery, VA</a> </span></li> 
+                </ul> 
+                <div id="options_3"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_2b76717af077b528" data-jk="2b76717af077b528" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_2b76717af077b528" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=2b76717af077b528" target="_blank" onmousedown="return rclk(this,jobmap[4],0);" onclick="return rclk(this,jobmap[4],true,0);" itemprop="title" title="Technical User Support - Region Specialist (Spain)">Technical User Support - Region Specialist (Spain)</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">Facebook</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Menlo Park, CA</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Troubleshoot user issues and escalate issues / feedback to <b>developers</b> appropriately. Facebook was built to help people connect and share, and over the last... </span> 
+              </div> <span class="date">18 hours ago</span> <span id="tt_set_4" class="tt_set"> - <span id="savelink2_2b76717af077b528"> <a id="sj_2b76717af077b528" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[4]); toggleResultTab(this, 'anon_save_job4', 4);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_2b76717af077b528"></span> 
+               <div id="editsaved2_2b76717af077b528" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=2b76717af077b528" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 4,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': '2b76717af077b528',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=2b76717af077b528',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_4', 4);
+return false;"> email</a> - <a href="#" id="tog_4" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=4&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_4', 4);return false;">more...</a> </span> 
+              <div id="tt_display_4" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job4" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job4" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_4" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_4" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Facebook-l-Menlo-Park,-CA-jobs.html" rel="nofollow">Facebook jobs in Menlo Park, CA</a> - <a href="/l-Menlo-Park,-CA-jobs.html">Menlo Park jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Technical+User+Support&amp;l1=Menlo+Park%2C+CA">Technical User Support salaries in Menlo Park, CA</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/Menlo-Park-California.html">Menlo Park, California</a> </span></li> 
+                </ul> 
+                <div id="options_4"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_6f1cdbd1c9428d8a" data-jk="6f1cdbd1c9428d8a" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_6f1cdbd1c9428d8a" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=6f1cdbd1c9428d8a" target="_blank" onmousedown="return rclk(this,jobmap[5],0);" onclick="return rclk(this,jobmap[5],true,0);" itemprop="title" title="Instrument Design Developer">Instrument Design <b>Developer</b></a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">Pacific Northwest National Laboratory</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Richland, WA</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> **Organization and Job ID** Job ID: 303710 Directorate: National Security Division: Signatures Science &amp; Technology Group: Radiochemical Analysis **Job </span> 
+              </div> <span class="date">2 days ago</span> <span id="tt_set_5" class="tt_set"> - <span id="savelink2_6f1cdbd1c9428d8a"> <a id="sj_6f1cdbd1c9428d8a" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[5]); toggleResultTab(this, 'anon_save_job5', 5);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_6f1cdbd1c9428d8a"></span> 
+               <div id="editsaved2_6f1cdbd1c9428d8a" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=6f1cdbd1c9428d8a" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 5,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': '6f1cdbd1c9428d8a',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=6f1cdbd1c9428d8a',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_5', 5);
+return false;"> email</a> - <a href="#" id="tog_5" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=5&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_5', 5);return false;">more...</a> </span> 
+              <div id="tt_display_5" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job5" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job5" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_5" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_5" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/jobs?q=Pacific+Northwest+National+Laboratory&amp;l=Richland,+WA&amp;nc=jasx" rel="nofollow">Pacific Northwest National Laboratory jobs in Richland, WA</a> - <a href="/l-Richland,-WA-jobs.html">Richland jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Instrument+Design+Developer&amp;l1=Richland%2C+WA">Instrument Design Developer salaries in Richland, WA</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/Richland-Washington.html">Richland, Washington</a> </span></li> 
+                </ul> 
+                <div id="options_5"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_2aacd340beb8a9a1" data-jk="2aacd340beb8a9a1" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_2aacd340beb8a9a1" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=2aacd340beb8a9a1" target="_blank" onmousedown="return rclk(this,jobmap[6],0);" onclick="return rclk(this,jobmap[6],true,0);" itemprop="title" title="Assistant/Receptionist">Assistant/Receptionist</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">Reaction Search International</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Los Angeles, CA</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Student Housing <b>developer</b> accounts. Industrial, Multifamily, and/or Student Housing <b>developer</b> accounts. Reaction Search International is one of the leading.... </span> 
+              </div> <span class="date">12 hours ago</span> <span id="tt_set_6" class="tt_set"> - <span id="savelink2_2aacd340beb8a9a1"> <a id="sj_2aacd340beb8a9a1" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[6]); toggleResultTab(this, 'anon_save_job6', 6);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_2aacd340beb8a9a1"></span> 
+               <div id="editsaved2_2aacd340beb8a9a1" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=2aacd340beb8a9a1" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 6,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': '2aacd340beb8a9a1',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=2aacd340beb8a9a1',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_6', 6);
+return false;"> email</a> - <a href="#" id="tog_6" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=6&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_6', 6);return false;">more...</a> </span> 
+              <div id="tt_display_6" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job6" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job6" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_6" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_6" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Reaction-Search-International-l-Los-Angeles,-CA-jobs.html" rel="nofollow">Reaction Search International jobs in Los Angeles, CA</a> - <a href="/l-Los-Angeles,-CA-jobs.html">Los Angeles jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Assistant+Receptionist&amp;l1=Los+Angeles%2C+CA">Assistant Receptionist salaries in Los Angeles, CA</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/Los-Angeles-California.html">Los Angeles, California</a> </span></li> 
+                </ul> 
+                <div id="options_6"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_f9aea527e42b58ab" data-jk="f9aea527e42b58ab" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_f9aea527e42b58ab" class="jobtitle"> <a rel="nofollow" href="/cmp/SNAP,-Inc./jobs/Senior-Training-Developer-f9aea527e42b58ab?r=1" target="_blank" onmousedown="return rclk(this,jobmap[7],0);" onclick="return rclk(this,jobmap[7],true,0);" itemprop="title" title="Senior Training Developer/ Military Analyst">Senior Training <b>Developer</b>/ Military Analyst</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">SNAP, Inc.</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Lawton, OK</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> The Senior Training <b>Developer</b>/ Military Analyst will perform work that requires the collection and analysis of data to provide reports, models, and strategies... </span> 
+              </div> 
+              <div class="iaP"> 
+               <span class="iaLabel"> Easily apply</span> 
+              </div> <span class="date">20 hours ago</span> <span id="tt_set_7" class="tt_set"> - <span id="savelink2_f9aea527e42b58ab"> <a id="sj_f9aea527e42b58ab" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[7]); toggleResultTab(this, 'anon_save_job7', 7);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_f9aea527e42b58ab"></span> 
+               <div id="editsaved2_f9aea527e42b58ab" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=f9aea527e42b58ab" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 7,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': 'f9aea527e42b58ab',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=f9aea527e42b58ab',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_7', 7);
+return false;"> email</a> - <a href="#" id="tog_7" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=7&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_7', 7);return false;">more...</a> </span> 
+              <div id="tt_display_7" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job7" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job7" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_7" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_7" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Snap-l-Lawton,-OK-jobs.html" rel="nofollow">SNAP jobs in Lawton, OK</a> - <a href="/l-Lawton,-OK-jobs.html">Lawton jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Senior+Training+Developer&amp;l1=Lawton%2C+OK">Senior Training Developer salaries in Lawton, OK</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/Lawton-Oklahoma.html">Lawton, Oklahoma</a> </span></li> 
+                </ul> 
+                <div id="options_7"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row " id="p_fc7d80f1c9ed70b6" data-jk="fc7d80f1c9ed70b6" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_fc7d80f1c9ed70b6" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=fc7d80f1c9ed70b6" target="_blank" onmousedown="return rclk(this,jobmap[8],0);" onclick="return rclk(this,jobmap[8],true,0);" itemprop="title" title="QA Analyst">QA Analyst</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">JRD Systems</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Farmington Hills, MI</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Work closely with <b>Developers</b> to understand the product and track, report, and verify bugs. Participate in a quality assurance role in various projects related... </span> 
+              </div> <span class="date">13 hours ago</span> <span id="tt_set_8" class="tt_set"> - <span id="savelink2_fc7d80f1c9ed70b6"> <a id="sj_fc7d80f1c9ed70b6" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[8]); toggleResultTab(this, 'anon_save_job8', 8);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_fc7d80f1c9ed70b6"></span> 
+               <div id="editsaved2_fc7d80f1c9ed70b6" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=fc7d80f1c9ed70b6" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 8,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': 'fc7d80f1c9ed70b6',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=fc7d80f1c9ed70b6',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_8', 8);
+return false;"> email</a> - <a href="#" id="tog_8" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=8&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_8', 8);return false;">more...</a> </span> 
+              <div id="tt_display_8" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job8" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job8" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_8" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_8" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Jrd-Systems-l-Farmington-Hills,-MI-jobs.html" rel="nofollow">JRD Systems jobs in Farmington Hills, MI</a> - <a href="/l-Farmington-Hills,-MI-jobs.html">Farmington Hills jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=QA+Analyst&amp;l1=Farmington+Hills%2C+MI">QA Analyst salaries in Farmington Hills, MI</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/job/QA-Analyst.html">QA Analyst</a> - <a href="/forum/loc/Farmington-Hills-Michigan.html">Farmington Hills, Michigan</a> </span></li> 
+                </ul> 
+                <div id="options_8"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div class="row lastRow" id="p_36e04b31403fc004" data-jk="36e04b31403fc004" itemscope itemtype="http://schema.org/JobPosting"> 
+          <h2 id="jl_36e04b31403fc004" class="jobtitle"> <a rel="nofollow" href="/rc/clk?jk=36e04b31403fc004" target="_blank" onmousedown="return rclk(this,jobmap[9],0);" onclick="return rclk(this,jobmap[9],true,0);" itemprop="title" title="Program Manager - NonTechnical">Program Manager - NonTechnical</a> </h2> 
+          <span class="company" itemprop="hiringOrganization" itemtype="http://schema.org/Organization"><span itemprop="name">Intuit</span></span> - 
+          <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span class="location" itemprop="address" itemscope itemtype="http://schema.org/Postaladdress"><span itemprop="addressLocality">Mountain View, CA 94039</span></span></span> 
+          <table cellpadding="0" cellspacing="0" border="0"> 
+           <tbody>
+            <tr> 
+             <td class="snip"> 
+              <div> 
+               <span class="summary" itemprop="description"> Books Platform Key Partners within the Intuit <b>Developer</b> Group (IDG). The platform is in a phase of rapid growth with an increasing number of <b>developer</b> partners... </span> 
+              </div> <span class="date">6 days ago</span> <span id="tt_set_9" class="tt_set"> - <span id="savelink2_36e04b31403fc004"> <a id="sj_36e04b31403fc004" href="#" class="sl resultLink" onclick="anonSaveJobLabel(this, jobmap[9]); toggleResultTab(this, 'anon_save_job9', 9);return false;" title="Save this job to my.indeed">save job</a> - </span> <span id="addedit2_36e04b31403fc004"></span> 
+               <div id="editsaved2_36e04b31403fc004" class="edit_note_content" style="display:none;"></div> <a href="mailto:?subject=I found this job on Indeed.com&amp;body=http://www.indeed.com/viewjob?jk=36e04b31403fc004" class="sl resultLink" onclick="
+if ( !hasAjax() ) { return; }
+toggle_email_job_content( this, 9,
+{
+'a': 'tellafriend',
+'tk' : '195bop55m0nii0j7',
+'jobkey': '36e04b31403fc004',
+'q': 'developer=',
+'permalink': 'http:\/\/www.indeed.com\/viewjob?jk=36e04b31403fc004',
+'sbt': '888192d7b26ace65b1e805135e9344ef',
+'fromEmail': window['tellFriendEmail']
+},
+{fbRef: 'search'}
+);
+toggleResultTab(this, 'email_job_content_9', 9);
+return false;"> email</a> - <a href="#" id="tog_9" class="sl resultLink" onmousedown="if ( window.rpc ) { rpc('/rpc/log?a=opma&amp;tk=195bop55m0nii0j7&amp;p=9&amp;ts=1414513071286'); this.onmousedown=null; }" onclick="toggleResultTab(this, 'more_9', 9);return false;">more...</a> </span> 
+              <div id="tt_display_9" class="tt_display" style="display:none;"> 
+               <div id="anon_save_job9" class="ws_content save_job_content" style="display:none;"></div> 
+               <div id="block_job9" class="ws_content block_job_content" style="display:none;"></div> 
+               <div id="email_job_content_9" class="ws_content email_job_content" style="display:none;"></div> 
+               <div id="more_9" class="more_actions" style="display:none;"> 
+                <ul> 
+                 <li><span class="mat"> View all <a href="/q-Intuit-l-Mountain-View,-CA-jobs.html" rel="nofollow">Intuit jobs in Mountain View, CA</a> - <a href="/l-Mountain-View,-CA-jobs.html">Mountain View jobs</a> </span></li> 
+                 <li><span class="mat"> Salary Search: <a href="/salary?q1=Program+Manager&amp;l1=Mountain+View%2C+CA">Program Manager salaries in Mountain View, CA</a> </span></li> 
+                 <li><span class="mat">Related forums: <a href="/forum/loc/Mountain-View-California.html">Mountain View, California</a> </span></li> 
+                </ul> 
+                <div id="options_9"></div> 
+               </div> 
+              </div> </td> 
+            </tr> 
+           </tbody>
+          </table> 
+         </div> 
+         <div></div> 
+         <div class="fJrhLfO yn5EMmBjYC"> 
+          <div class="brdr">
+           <!-- -->
+          </div> 
+          <div class="row " data-jk="bc345c9fce8d08a1"> 
+           <a target="_blank" id="sja4" class="jobtitle" href="/pagead/clk?mo=r&amp;ad=-6NYlbfkN0Co3n-VdP8vBW-PybZrQF3M2Oj2NNqExi6-cnnoC5ToaRM5O_Kcq36X7cX__OA1LkgTQzXhgP8CXUKGqL6cR0_9Y46docmIalJX9xqqBA4U7D757ZA1t5rTGYan7AN54N9YcX3cRruJLkvIk5Pg1yhmF1v_4sOsEc5CrE88KLZiNkjBMGtiND0IeGMmyJupDNpiScgxPZ-gpuvQB5agVfhmKhG2RgShmlazsNREk7EopDy_u7l39emW2lSNu-pEyDBDhAPFjAqtAAL6TsawVGs_VqvqNRw7xhAvSrQ4qbAOdihjyThcFuOZq7317QwbPmrJyx4XnOtJJXSd9fyJ_YKGimaq_uvg7zQlTIG5aEDEQvMadO0lK5FyHYbQyOOqaf02LIAi0Mmj9vt12uCy6y4ey1shHBv0V4eenVP_zB6IHj9JdLUCYdYqrqkpFyqHNsfCdNbbVWwNWA==&amp;p=4&amp;sk=89ae8fe7cc43f8d5" title="Siebel Developer - EIM with Informatica" rel="nofollow" onmousedown="sjomd('sja4'); clk('sja4');" onclick="sjoc('sja4',0); convCtr('SJ', pingUrlsForGA)">Siebel <b>Developer</b> - EIM with Informatica</a> 
+           <br> 
+           <div class="sjcl"> 
+            <span class="company">ClearVision CRM</span> - 
+            <span class="location">Sunnyvale, CA</span> 
+           </div> 
+           <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+             <tr>
+              <td class="snip"> <span class="summary">Looking for a Siebel Data migration <b>developer</b> with 3 years minimum experience. Must have strong knowledge/skills on EIM, with Informatica being used for...</span> </td>
+             </tr>
+            </tbody>
+           </table> 
+           <div class="iaP"> 
+            <span class="iaLabel"> Easily apply</span> 
+           </div> 
+           <span class="sdn">Sponsored by <b>ClearVision CRM</b></span>&nbsp;-&nbsp;
+           <span class="date">30+ days ago</span> 
+          </div> 
+          <div class="row sjlast" data-jk="8a1ef4746233a7ce"> 
+           <a target="_blank" id="sja5" class="jobtitle" href="/pagead/clk?mo=r&amp;ad=-6NYlbfkN0DdXnPqwYiIrEKJMiGtoBoRMY0gisMhtebYjuc8wwZJigPZd21s39SPfwmyatXzNfxXo-akDAszrBBVbibUsLs4dqe60OOpoAIG0WRJehPu9xZGr0CKTu6Lkj5czEHun9T4UMW8GNrVIOQjnNWWhKI_Y2GLOVr5InEYP_PSN5bvojL-2Zrbc9w-XoZBQsxJ7c7Nz3M9OcPVg9HX-OG42Dab7fGvL3ZR4bPOc9QcBqGV-VSrXN8aQjVdO83t4Rf482q5NoLIWzJ52opWt8ouVcWdtK0ERGiR88JFC2oBv7NN20PJ7mk4KbGOtTljJSW8C7q5_q6oY_JXlRV-C-WOWshf3fGs_bZjJe2HGpGuvSJUJps0q8RhL2-Wrl4tQe2fvVVa71NvumkN2bAqJS3aKYJyzG0rj5FcybNQ3iXdt7k4o0AW0Bw4LSlIOjcwlymxPKI8VUgyL-n7aI2aU_g5P6oN6VVMgwVcfZAW-MJVSsTY3ML9oNLkMgaW_gxUuX2uWRiuDbXDsu-2ZClXojlbiYPEu5JMkWPXA1KIwYasGchASQn_TccnvuwrR6pf3GOdkC31ipQuStC4lZxE1P8pl6fu34QMKjinR1FCafSC_i28W0w84cs53Jj57pfcX9FWQaGF-_UL83Vs7m4FN0Wzc6vWzy9BEEykg5C0GN3OOIB2w3H7SIdT-jbEDzaK1sHjZ4gETIsU2XsQRCLS5BkzTXdQsWQBrExJxTblk9BCb4IVny09r4gTnrqimkg3bg5qmMBeDXpV8cxcyLlwSQe2x7-YF3s5cRGsjZ6yepk2dBP67vnyabWKcULJ7UzgmjzlpMzq9t-At9ftRrFzD9SdYQWNbvX0ZxK2EpxaeQvL72re6FwB54qA79pOEUkIzRhYGWOyP5-mzOfopPTrt4Fn0d0vHso0OKucUR18qn6VPRvitMb9k0wwcAruIWt8QRilKtjsjG9WgErh2_kq5TmIvDdR2wMSG7L_RtfvK-qrx4duuvm9M3joNODt_v8KdxT9jr1iF_OCdtYcMzpm8oKvjC0eAsbR5eBglpRg9WV_3qh-Ia2m4onX9sJZO0dCUEUWdg4Pk0QoU4eTcg-4FhK4Nl7OfDDgRSenRtQ=&amp;p=5&amp;sk=89ae8fe7cc43f8d5" title="Mid-level Engineer - Plum Analytics" rel="nofollow" onmousedown="sjomd('sja5'); clk('sja5');" onclick="sjoc('sja5',0); convCtr('SJ', pingUrlsForGA)">Mid-level Engineer - Plum Analytics</a> 
+           <br> 
+           <div class="sjcl"> 
+            <span class="company">EBSCO Information Services</span> - 
+            <span class="location">Philadelphia, PA</span> 
+           </div> 
+           <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+             <tr>
+              <td class="snip"> <span class="summary">As a member of the Plum Analytics development team, you’ll we working with a group of passionate product managers and <b>developers</b>, all focused on defining the...</span> </td>
+             </tr>
+            </tbody>
+           </table> 
+           <span class="sdn">Sponsored by <b>EBSCO Information Services</b></span>&nbsp;-&nbsp;
+           <span class="date">20 days ago</span> 
+          </div> 
+         </div> <script type="text/javascript">
+initViewSj('195bop55m0nii0j7', 'yn5EMmBjYC');
+</script> <p class="footerJaPromoBubble"> <span> Never miss a job. Get new jobs emailed to you daily. </span> <script type="text/javascript">setJaPromoCookie()</script> </p> 
+         <div id="bjobalerts" class="jaui open jaPromoUi u6ViqwL"> 
+          <div class="jobalertlabel"> 
+           <span id="bjobalertlabel" class="jobalerts_title"><span class="ico"></span>Get email updates for the latest <b>developer= jobs</b></span> 
+          </div> 
+          <div id="bjobalertform" class="jaform"> 
+           <span id="bjobalerttext"></span>
+           <span id="bjobalertsending"></span> 
+           <div id="bjobalertmessage"> 
+            <form action="/alert" method="POST" onsubmit="return addalert('developer%3D','','b','',this.email.value,'195bop55m0nii0j7', this.verified.value, false, 'inTest', true, '526930', 'US');"> 
+             <input type="hidden" name="a" value="add"> 
+             <input type="hidden" name="q" value="developer="> 
+             <input type="hidden" name="l" value=""> 
+             <input type="hidden" name="radius" value="25"> 
+             <input type="hidden" name="noscript" value="1"> 
+             <input type="hidden" name="fr" value="b"> 
+             <input type="hidden" name="tk" value="195bop55m0nii0j7"> 
+             <input id="balertverified" type="hidden" name="verified" value="0"> 
+             <input type="hidden" name="alertparams" value=""> 
+             <label for="balertemail">My email:</label> 
+             <input type="text" id="balertemail" name="email" value="" size="25" maxlength="100"> 
+             <span class="indeed-apply-button"><span class="indeed-apply-button-inner"><input id="balertsubmit" type="submit" value="Activate" class="indeed-apply-button-label" data-criteostate="inTest"></span></span> 
+             <style type="text/css">
+.indeed-apply-button { cursor : pointer !important; display : inline-block !important; padding : 1px !important; height : 31px !important; -moz-border-radius : 7px !important; border-radius : 7px !important; position : relative !important; text-decoration : none !important;background-color:#79788B; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#BCBBCD', endColorstr='#79788B', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#BCBBCD), to(#79788B)) !important;background-image: -webkit-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -moz-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -o-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -ms-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: linear-gradient(top, #BCBBCD, #79788B) !important;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important; } #indeed-ia-1329175190441-0:link, #indeed-ia-1329175190441-0:visited, #indeed-ia-1329175190441-0:hover, #indeed-ia-1329175190441-0:active { border : 0 !important; text-decoration : none !important; }
+
+.indeed-apply-button:hover { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6D99F6', endColorstr='#1B45A3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#6D99F6), to(#1B45A3)) !important;background-image: -webkit-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -moz-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -o-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -ms-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: linear-gradient(top, #6D99F6, #1B45A3) !important; }
+
+.indeed-apply-state-clicked .indeed-apply-button,
+.indeed-apply-button:active { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3BACA', endColorstr='#7C8493', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#B3BACA), to(#7C8493)) !important;background-image: -webkit-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -moz-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -o-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -ms-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: linear-gradient(top, #B3BACA, #7C8493) !important;-webkit-box-shadow: none !important;-moz-box-shadow: none !important;box-shadow: none !important; }
+
+.indeed-apply-button-inner { display : inline-block !important; height : 26px !important; padding : 3px 14px 2px 12px !important; -moz-border-radius : 6px !important; border-radius : 6px !important; font : 18px 'Helvetica Neue','Helvetica',Arial !important; font-weight : 200 !important; text-decoration : none !important; text-shadow : 0px 1px #F1F1F4 !important;background-color:#D9D9E2;  color: #FF6703;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFB', endColorstr='#D9D9E2', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#FAFAFB), to(#D9D9E2)) !important;background-image: -webkit-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -moz-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -o-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -ms-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: linear-gradient(top, #FAFAFB, #D9D9E2) !important; }
+
+.indeed-apply-button:active .indeed-apply-button-inner { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8E8E9', endColorstr='#CBCBD3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#E8E8E9), to(#CBCBD3)) !important;background-image: -webkit-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -moz-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -o-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -ms-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: linear-gradient(top, #E8E8E9, #CBCBD3) !important; }
+
+.indeed-apply-button-label {cursor: pointer; text-align : center !important; border:0; background: transparent;font-size: 12px; font-family: Arial, sans-serif; padding:0; margin:0; line-height: 26px;  }
+
+.indeed-apply-button:active .indeed-apply-button-label,
+.indeed-apply-state-clicked .indeed-apply-button-label { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.75)" !important;filter: alpha(opacity=75) !important;-moz-opacity: 0.75 !important;-khtml-opacity: 0.75 !important;opacity: 0.75 !important; }
+
+#talertemail, #balertemail {  height: 27px; line-height: 24px; padding-left: 6px; padding-right: 6px; font-size: 14px; font-family: Arial, sans-serif; }
+</style> 
+            </form> 
+            <span class="caption"> You can cancel email alerts at any time. </span> 
+           </div> 
+          </div> 
+         </div> <script type="text/javascript">
+function ptk(st,p) {document.cookie = 'PTK="tk=195bop55m0nii0j7&type=jobsearch&subtype='+st+(p?'&'+p:'')+'"; path=/';}
+</script> <script type="text/javascript">
+function pclk(event) {
+var evt = event || window.event;
+var target = evt.target || evt.srcElement;
+var el = target.nodeType == 1 ? target : target.parentNode;
+var tag = el.tagName.toLowerCase();
+if (tag == 'span' || tag == 'a') {
+ptk('pagination');
+}
+return true;
+}
+</script> 
+         <!--default behavior is to show the pagination--> 
+         <div class="pagination" onmousedown="pclk(event);">
+          Results&nbsp;Page:&nbsp;&nbsp;
+          <b>1</b>&nbsp;&nbsp;
+          <a href="/jobs?q=developer%3D&amp;start=10" rel="nofollow"><span class="pn">2</span></a>&nbsp;&nbsp;
+          <a href="/jobs?q=developer%3D&amp;start=20" rel="nofollow"><span class="pn">3</span></a>&nbsp;&nbsp;
+          <a href="/jobs?q=developer%3D&amp;start=30" rel="nofollow"><span class="pn">4</span></a>&nbsp;&nbsp;
+          <a href="/jobs?q=developer%3D&amp;start=40" rel="nofollow"><span class="pn">5</span></a>&nbsp;&nbsp; 
+          <a href="/jobs?q=developer%3D&amp;start=10" rel="nofollow"><span class="pn"><span class="np">Next&nbsp;»</span></span></a>
+         </div> 
+         <div class="related_searches"> 
+          <div class="related_searches_list"> 
+           <b class="related_searches_title">Related Forums:</b> 
+           <a href="/forum/job/QA-Analyst.html" onclick="logRSC('rfsclk', 'QA Analyst', '195bop55m0nii0j7')">QA Analyst</a> 
+          </div> 
+          <div class="related_searches_list"> 
+           <b class="related_searches_title"> Salaries: </b> 
+           <a href="/salary?q1=QA+Analyst&amp;l1=" onclick="logRSC('rssclk', 'QA Analyst', '195bop55m0nii0j7')">QA Analyst salary</a> 
+          </div> 
+         </div> </td> 
+        <td id="auxCol"> 
+         <div id="tjobalerts" class="jaui open  "> 
+          <div class="jobalertlabel"> 
+           <span id="tjobalertlabel" class="jobalerts_title"><span class="ico"></span>Get new jobs for this search by email</span> 
+          </div> 
+          <div id="tjobalertform" class="jaform"> 
+           <span id="tjobalerttext"></span>
+           <span id="tjobalertsending"></span> 
+           <div id="tjobalertmessage"> 
+            <form action="/alert" method="POST" onsubmit="return addalert('developer%3D','','t','',this.email.value,'195bop55m0nii0j7', this.verified.value, false, 'inTest', true, '526930', 'US');"> 
+             <input type="hidden" name="a" value="add"> 
+             <input type="hidden" name="q" value="developer="> 
+             <input type="hidden" name="l" value=""> 
+             <input type="hidden" name="radius" value="25"> 
+             <input type="hidden" name="noscript" value="1"> 
+             <input type="hidden" name="fr" value="t"> 
+             <input type="hidden" name="tk" value="195bop55m0nii0j7"> 
+             <input id="talertverified" type="hidden" name="verified" value="0"> 
+             <input type="hidden" name="alertparams" value=""> 
+             <label for="talertemail">My email:</label> 
+             <input type="text" id="talertemail" name="email" value="" size="25" maxlength="100"> 
+             <span class="indeed-apply-button"><span class="indeed-apply-button-inner"><input id="talertsubmit" type="submit" value="Activate" class="indeed-apply-button-label" data-criteostate="inTest"></span></span> 
+             <style type="text/css">
+.indeed-apply-button { cursor : pointer !important; display : inline-block !important; padding : 1px !important; height : 31px !important; -moz-border-radius : 7px !important; border-radius : 7px !important; position : relative !important; text-decoration : none !important;background-color:#79788B; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#BCBBCD', endColorstr='#79788B', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#BCBBCD), to(#79788B)) !important;background-image: -webkit-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -moz-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -o-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: -ms-linear-gradient(top, #BCBBCD, #79788B) !important;background-image: linear-gradient(top, #BCBBCD, #79788B) !important;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;box-shadow: 0 1px 2px rgba(0,0,0,0.2) !important; } #indeed-ia-1329175190441-0:link, #indeed-ia-1329175190441-0:visited, #indeed-ia-1329175190441-0:hover, #indeed-ia-1329175190441-0:active { border : 0 !important; text-decoration : none !important; }
+
+.indeed-apply-button:hover { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6D99F6', endColorstr='#1B45A3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#6D99F6), to(#1B45A3)) !important;background-image: -webkit-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -moz-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -o-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: -ms-linear-gradient(top, #6D99F6, #1B45A3) !important;background-image: linear-gradient(top, #6D99F6, #1B45A3) !important; }
+
+.indeed-apply-state-clicked .indeed-apply-button,
+.indeed-apply-button:active { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3BACA', endColorstr='#7C8493', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#B3BACA), to(#7C8493)) !important;background-image: -webkit-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -moz-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -o-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: -ms-linear-gradient(top, #B3BACA, #7C8493) !important;background-image: linear-gradient(top, #B3BACA, #7C8493) !important;-webkit-box-shadow: none !important;-moz-box-shadow: none !important;box-shadow: none !important; }
+
+.indeed-apply-button-inner { display : inline-block !important; height : 26px !important; padding : 3px 14px 2px 12px !important; -moz-border-radius : 6px !important; border-radius : 6px !important; font : 18px 'Helvetica Neue','Helvetica',Arial !important; font-weight : 200 !important; text-decoration : none !important; text-shadow : 0px 1px #F1F1F4 !important;background-color:#D9D9E2;  color: #FF6703;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFB', endColorstr='#D9D9E2', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#FAFAFB), to(#D9D9E2)) !important;background-image: -webkit-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -moz-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -o-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: -ms-linear-gradient(top, #FAFAFB, #D9D9E2) !important;background-image: linear-gradient(top, #FAFAFB, #D9D9E2) !important; }
+
+.indeed-apply-button:active .indeed-apply-button-inner { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8E8E9', endColorstr='#CBCBD3', GradientType=0);background-image: -webkit-gradient(linear, center top, center bottom, from(#E8E8E9), to(#CBCBD3)) !important;background-image: -webkit-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -moz-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -o-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: -ms-linear-gradient(top, #E8E8E9, #CBCBD3) !important;background-image: linear-gradient(top, #E8E8E9, #CBCBD3) !important; }
+
+.indeed-apply-button-label {cursor: pointer; text-align : center !important; border:0; background: transparent;font-size: 12px; font-family: Arial, sans-serif; padding:0; margin:0; line-height: 26px;  }
+
+.indeed-apply-button:active .indeed-apply-button-label,
+.indeed-apply-state-clicked .indeed-apply-button-label { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.75)" !important;filter: alpha(opacity=75) !important;-moz-opacity: 0.75 !important;-khtml-opacity: 0.75 !important;opacity: 0.75 !important; }
+
+#talertemail, #balertemail {  height: 27px; line-height: 24px; padding-left: 6px; padding-right: 6px; font-size: 14px; font-family: Arial, sans-serif; }
+</style> 
+            </form> 
+            <span class="caption"> You can cancel email alerts at any time. </span> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="narrowAds">
+          <div id="sideadsense" class="vasu"></div>
+         </div> </td> 
+       </tr> 
+      </tbody>
+     </table> <script>
+var focusHandlers = [];
+var linkHighlighter = new LinkHighlighter();
+focusHandlers.push(googBind(linkHighlighter.fadeToOriginalColor, linkHighlighter));
+var lostFocusHandlers = [];
+lostFocusHandlers.push(googBind(linkHighlighter.clickedAway, linkHighlighter));
+
+var clickTime = new ClickTime(window.tk, 'serp', 'jobtitle', focusHandlers, lostFocusHandlers);
+</script> <style type="text/css">
+#secondary_nav a,
+#secondary_nav a:link,
+#secondary_nav a:visited { color: #77c; text-decoration: none; }
+#secondary_nav a:hover { text-decoration: underline;  }
+</style> 
+     <!-- jobs --> 
+     <div id="footerWrapper" style="text-align:center;"> 
+      <div id="footer" style="text-align:left;"> 
+       <div class="separator_bottom"></div> 
+       <div id="secondary_nav"> 
+        <div style="margin: 1em;"> 
+         <span class="gaj_heading">Indeed helps people get jobs:</span> 
+         <a href="/promo/gotajob" onmousedown="this.href = appendParamsOnce( this.href, '?trk.origin=jobsearch&amp;trk.tk=195bop55m0nii0j7')" class="sl">Over 2.2 million stories shared</a> 
+        </div> 
+        <a href="/" title="Jobs" id="jobs_product_link">Jobs</a> - 
+        <a href="/salary" title="Salary Search" id="salaries_product_link">Salaries</a> - 
+        <a href="/jobtrends" title="Career Trends" id="trends_product_link">Trends</a> - 
+        <a href="/forum" title="Employment Forums" id="forums_product_link">Forums</a> - 
+        <script type="text/javascript">
+
+
+document.getElementById('salaries_product_link').onclick = function() { if ( !document.js ) { return; } var q = document.js.q.value; var l = document.js.l.value; if ( q || l ) { window.location = '/salary?q1=' + urlencode( q ) + '&l1=' + urlencode( l ); return false; } };
+document.getElementById('trends_product_link').onclick = function() { if ( !document.js ) { return; } var q = document.js.q.value; if ( q ) { window.location = '/jobtrends?q=' + urlencode( q ) + '&l=' + urlencode( document.js.l.value ); return false; } };
+document.getElementById('forums_product_link').onclick = function() { if ( !document.js ) { return; } var q = document.js.q.value; if ( q ) { window.location = '/forum/?q=' + urlencode( q ) + '&l=' + urlencode( document.js.l.value ); return false; } };
+
+
+
+
+
+</script> 
+        <a href="/Best-Places-to-Work" onclick="this.href += '?campaignid=bptwserp';">Best Places to Work</a> - 
+        <a href="/find-jobs.jsp">Browse Jobs</a> - 
+        <a href="/tools/jobseeker/">Tools</a> - 
+        <a href="/publisher">API</a> - 
+        <a href="/intl/en/about.html">
+         <nobr>
+          About
+         </nobr></a> - 
+        <a href="/support">Contact</a> 
+        <style type="text/css">
+#footer-legal {
+margin-top: 10px;
+font-size: 9pt;
+}
+</style> 
+        <div id="footer-legal">
+         ©2014 Indeed - 
+         <a href="/legal" class="sl">Cookies, Privacy and Terms</a>
+        </div> 
+       </div> 
+      </div> 
+     </div> </td>
+   </tr>
+  </tbody>
+ </table> 
+ <script type="text/javascript">
+        var ebRand = Math.random()+'';
+        ebRand = ebRand * 1000000;
+
+        document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&ActivityID=' + '526931' + '&rnd=' + ebRand +  '"></scr' + 'ipt>');
+    </script> 
+ <noscript> 
+  <img width="1" height="1" style="border:0" src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&amp;ActivityID=526931&amp;ns=1"> 
+ </noscript> 
+ <script type="text/javascript">
+        function mc_cv_tag(activityId) {
+            var ebRand = Math.random()+'';
+            ebRand = ebRand * 1000000;
+
+            var tagContainer = document.body.appendChild(document.createElement("div"));
+            tagContainer.style.position="absolute";
+            tagContainer.style.top="0";
+            tagContainer.style.left="0";
+            tagContainer.style.width="1px";
+            tagContainer.style.height="1px";
+            tagContainer.style.display="none";
+
+            var jsTag = document.createElement('script');
+            jsTag.src = 'HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&ActivityID=' + activityId + '&rnd=' + ebRand;
+            jsTag.style.width="1px";
+            jsTag.style.height="1px";
+            jsTag.style.border="0";
+
+            var noScript = document.createElement("noscript");
+            noScript.innerHTML = '<img width="1" height="1" style="border:0" src="HTTP://bs.serving-sys.com/Serving/ActivityServer.bs?cn=as&ActivityID=' + activityId + '&ns=1"/>';
+
+            tagContainer.appendChild(jsTag);
+            tagContainer.appendChild(noScript);
+        }
+    </script> 
+ <script type="text/javascript">
+<!--
+(function ( tk ) { if ( tk && document.images ) { var s="/", q="?", a="&", e="="; rpc(s+"rpc"+s+"log"+q+"a"+e+"jsv"+a+"tk"+e+tk); } })('195bop55m0nii0j7');
+function jsall_loaded() {
+
+attachSjBlock('195bop55m0nii0j7');
+attachJaBlock('195bop55m0nii0j7');
+}
+if (window['closureReady'] === true) {
+jsall_loaded();
+}
+//-->
+</script> 
+ <style type="text/css">
+    .wideAds { clear: both; }
+    .wideAdsLoaded { margin-bottom: 9px; padding-top: 1px; padding-bottom: 1px; }
+    #bottomadsense, #topadsense { line-height: 0; margin-bottom: 0; }
+    .wideAdsLoaded #bottomadsense, .wideAdsLoaded #topadsense  { margin-top: 1px; margin-bottom: 2px; }
+    .narrowAds { margin: 4px; padding-top: 8px; }
+    @media only screen and (min-width:1125px) {
+        .wideAds { padding-left: 8px; padding-right: 8px; }
+    }
+</style> 
+ <script src="http://www.google.com/adsense/search/ads.js" type="text/javascript"></script> 
+ <script type="text/javascript" charset="utf-8">
+try {
+new google.ads.search.Ads(
+    {
+        "pubId": "indeed-na-us_js",
+        "channel": '3064462960+5521608224+1752933488+2813565869+4250536435+1000000059+kwexprev4+ggltxttst1+iPad_ads1+usafssj1+afs-SJ2',
+        
+
+        "query": "developer= occupation",
+        "queryContext": "occupation",
+        "gl": "us",
+        "adPage": "1",
+        "hl": "en",
+        "oe": "utf8",
+        "ie": "utf8",
+        "domainLinkAboveDescription": false,
+        "linkTarget": "_blank",
+
+        "adsafe": "high",
+        "sellerRatings": false,
+        "siteLinks": false,
+        "instantPreviews": false,
+        "plusOnes": false,
+        "location": false
+    }
+    
+    
+    
+);
+
+var adUnitsRequested = {};
+
+
+
+recordAdsenseImpressions(
+        "developer= occupation",
+        3,
+        "3064462960,5521608224,1752933488,2813565869,4250536435,1000000059,kwexprev4,ggltxttst1,iPad_ads1,usafssj1,afs-SJ2",
+        "en",
+        adUnitsRequested
+);
+} catch (adsenseErr) {
+    
+    handleAdSenseError(adsenseErr);
+}
+
+
+var divIndicators = {};
+
+
+
+detectIframeClicksOn(divIndicators);
+</script> 
+ <script type="text/javascript">(function(d,s){var js=d.getElementsByTagName(s)[0];var
+        r=d.createElement(s);r.async=true;r.src=("https:"==location.protocol?"https:":"http:")+"//static.criteo.net/js/ld/ld.js";js.parentNode
+        .insertBefore(r,js)})(document,"script")</script> 
+ <script type="text/javascript">
+    var query = "Developer=" + "-" + "" + "-";
+    window.criteo_q = window.criteo_q || [];
+    window.criteo_q.push(
+            { event: "setAccount", account: 11805 },
+            { event: "setSiteType", type: "d" });
+    
+        
+        
+            window.criteo_q.push(
+                    { event: "viewList", item: [query + (Math.floor(Math.random()*6)+1), query + (Math.floor(Math.random()*6)+1), query + (Math.floor(Math.random()*6)+1)] },
+                    { event: "viewItem", item: query + (Math.floor(Math.random()*6)+1) });
+        
+    
+</script> 
+ <script type="text/javascript">
+    function cto_cv_pxl(jobName,location,convId,nc){
+        var query = jobName + "-" + location + "-" + (Math.floor(Math.random()*6)+1);
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+                { event: "setAccount", account: 11805 },
+                { event: "manualDising" },
+                { event: "setSiteType", type: "d" },
+                { event: "setData", si: "1" },
+                { event: "trackTransaction" , id: convId, new_customer: nc, deduplication: 1, item: [
+                    { id: query, price: 1, quantity: 1 }
+                ]});
+    }
+</script> 
+ <script type="text/javascript">
+    function cto_dd_pxl(jobName,location,convId,nc){
+        var query = jobName + "-" + location + "-" + (Math.floor(Math.random()*6)+1);
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+                { event: "setAccount", account: 11805 },
+                { event: "manualDising" },
+                { event: "setSiteType", type: "d" },
+                { event: "trackTransaction" , id: convId, new_customer: nc, deduplication: 0, item: [
+                    { id: query, price: 1, quantity: 1 }
+                ]});
+    }
+</script> 
+ <script type="text/javascript">
+PENDING_ANALYTICS_VARS = window.PENDING_ANALYTICS_VARS || [];
+PENDING_ANALYTICS_VARS[PENDING_ANALYTICS_VARS.length] = ['_setCustomVar', 4, 'semRevTest', '-1', 1];
+</script> 
+ <script type="text/javascript">
+PENDING_ANALYTICS_VARS = window.PENDING_ANALYTICS_VARS || [];
+PENDING_ANALYTICS_VARS[PENDING_ANALYTICS_VARS.length] = ['_setCustomVar', 5, 'loggedIn', 'false', 3];
+</script> 
+ <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-90780-1']);
+
+
+
+(function() {
+if (window.PENDING_ANALYTICS_VARS && window.PENDING_ANALYTICS_VARS.length > 0) {
+  for (var i in PENDING_ANALYTICS_VARS) {
+    _gaq.push(PENDING_ANALYTICS_VARS[i]);
+  }
+}
+})();
+  
+_gaq.push(['_trackPageview']);
+
+_gaq.push(['_trackPageLoadTime']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+
+
+    
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script> 
+ <script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6486505", c4:"www.indeed.com/jobs", c15:"195bop5320nii0un"});
+(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+</script> 
+ <noscript> 
+  <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6486505&amp;c4=www.indeed.com%2Fjobs&amp;c15=195bop5320nii0un&amp;cv=2.0&amp;cj=1" style="display:none" width="0" height="0" alt=""> 
+ </noscript> 
+ <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1049100955;
+    var google_conversion_label = "GXkhCM2YtwMQm4Wg9AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script> 
+ <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script> 
+ <noscript> 
+  <div style="display:inline;"> 
+   <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1049100955/?value=0&amp;label=GXkhCM2YtwMQm4Wg9AM&amp;guid=ON&amp;script=0"> 
+  </div> 
+ </noscript>   
+</body>
